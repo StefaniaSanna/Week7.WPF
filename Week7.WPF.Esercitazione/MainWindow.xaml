@@ -1,0 +1,44 @@
+﻿<Window x:Class="Week7.WPF.Esercitazione.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Week7.WPF.Esercitazione"
+        mc:Ignorable="d"
+        Title="Ecommerce" Height="461" Width="500">
+    <DockPanel >
+        <TextBlock DockPanel.Dock="Top" Height="85" FontSize="36" Foreground="#FF020835" >
+            <TextBlock.Background>
+                <SolidColorBrush Color="#FF033CE6" />
+            </TextBlock.Background> Fumetti Online</TextBlock>
+        <StackPanel DockPanel.Dock="Left" Width="243">
+            <TextBlock Background="#FF3E4AFD" Height="90"  ></TextBlock>
+            <ListBox x:Name="listProducts" Width="221" Height="90" Background="#FF3E4AFD" >
+                <ListBoxItem Content="Batman" FontSize="16"/>
+                <ListBoxItem Content="Doctor Strange" FontSize="16"/>
+                <ListBoxItem Content="Freccia Verde" FontSize="16"/>
+                <ListBoxItem Content="Batman e Robin" FontSize="16"/>
+                <ListBoxItem Content="Occhio di Falco" FontSize="16"/>
+
+            </ListBox>
+            <TextBlock Background="#FF3E4AFD" Height="90"  ></TextBlock>
+            <TextBlock Background="#FF3E4AFD" Height="90"  ></TextBlock>
+
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Right" Width="255">
+            <TextBlock Background="#FF3E4AFD" Height="120" ></TextBlock>
+            <StackPanel x:Name="PannelloC" Background="#FF3E4AFD" Height="120">
+                <Button Height="60px" Width="100px" 
+                        FontSize="16"
+                        Margin="75,30,75,30" Background="#FF7D84F1" Click="GetInformation">
+                    Dettagli
+                </Button>
+            </StackPanel>
+            <StackPanel >
+                <TextBox x:Name="PannelloD" FontSize="16" Background="#FF3E4AFD" Height="120"></TextBox>
+                
+            </StackPanel>
+            
+        </StackPanel>
+    </DockPanel>
+</Window>

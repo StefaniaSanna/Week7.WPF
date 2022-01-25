@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace Week7.WPF.ComplexLayout
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void AddName(object sender, RoutedEventArgs e)
+        {
+            //metodo di gestione dell'evento
+            listNames.Items.Add("Renata");
+        }
+
+        private void Clear(object sender, RoutedEventArgs e)
+        {
+            if (listNames.Items.Count > 0) //se hai valori nella lista cancella
+            {
+                listNames.Items.Clear();
+            }
+
+        }
+    }
+}
